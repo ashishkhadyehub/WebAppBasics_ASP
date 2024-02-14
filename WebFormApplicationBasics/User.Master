@@ -29,7 +29,7 @@
                         <a class="nav-link" href="S1.aspx">Session</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="QS1.aspx">Query String</a>
+                        <a class="nav-link" href="QS1.aspx">Query String</a>
                     </li>
                 </ul>
             </nav>

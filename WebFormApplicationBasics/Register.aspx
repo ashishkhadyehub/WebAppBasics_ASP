@@ -5,25 +5,36 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <%--contnet page body tag--%>
-    <div class="container" style="margin-top:60px">
+    <div class="container" style="margin-top: 60px">
         <div class="row">
-            <div class="col-md-3"></div>
+            <h3>Register Now</h3>
+            <div class="col-md-2"></div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <label for="email">Name:</label>
+                    <asp:TextBox runat="server" ID="txtName" placeholder="Enter Name" CssClass="form-control"></asp:TextBox>
+
                 </div>
                 <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    <label for="email">Contact:</label>
+                    <asp:TextBox runat="server" TextMode="Number" ID="txtContact" placeholder="Enter Contact" CssClass="form-control"></asp:TextBox>
+
                 </div>
-                <div class="form-group form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" name="remember">
-                        Remember me
-                    </label>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <asp:TextBox runat="server" ID="txtEmail" TextMode="Email" placeholder="Enter Email" CssClass="form-control"></asp:TextBox>
+
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <label for="pwd">City:</label>
+                    <asp:DropDownList runat="server" ID="ddlCity" CssClass="form-control">
+                        <asp:ListItem Value="KOP" Text="Kolhapur"></asp:ListItem>
+                        <asp:ListItem Value="PUN" Text="Pune"></asp:ListItem>
+                        <asp:ListItem Value="DEL" Text="Delhi"></asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+               <asp:Button runat="server" CssClass="btn btn-primary" ID="btnSubmit" Text="Register" OnClick="btnSubmit_Click" />
+               
             </div>
         </div>
     </div>
