@@ -5,6 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container" style="margin-top:60px">
         <div class="row">
+
+            <h2>Session Example</h2>
             <div class="form-group">
                 <label>Enter Name</label>
                 <asp:TextBox runat="server" ID="txtName" CssClass="form-control"></asp:TextBox>
